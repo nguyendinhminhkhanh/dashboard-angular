@@ -1,0 +1,23 @@
+<table class="table">
+  <tbody>
+    <tr>
+      <td>Họ:</td>
+      <td>{{profileData.firstName}}</td>
+    </tr>
+    <tr>
+      <td>Tên:</td>
+      <td>{{profileData.lastName}}</td>
+    </tr>
+    <tr>
+      <td>Email:</td>
+      <td>{{profileData.email}}</td>
+    </tr>
+    <tr>
+      <td>Mật khẩu:</td>
+      <!-- <input [type]="isPassword" [(ngModel)]="profileData.password"  [disabled]="!isEdit"> -->
+      <!-- <button (click)="edit()">Sửa</button> -->
+      <!-- <button (click)="save()"  [disabled]="!isEdit">Lưu</button> -->
+    </tr>
+  </tbody>
+</table>
+<button type="button" class="btn btn-outline-secondary" (click)="onChange()">Đổi mật khẩu</button>

@@ -1,0 +1,34 @@
+<div class="center">
+  <button routerLink="../add-customer" type="button" class="btn btn-outline-success">
+    <i class="bx bx-add-to-queue"></i> Thêm khách hàng
+  </button>
+  <div class="seach">
+    <input class="bd-1 input-search" type="text" placeholder="Tìm kiếm khách hàng">
+    <i class='bx bx-search-alt bd-1 icon-search'></i>
+  </div>
+</div>
+<div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Khách hàng</th>
+        <th scope="col">Địa chỉ</th>
+        <th scope="col">Email</th>
+        <th scope="col">Số điện thoại</th>
+        <th scope="col">Trạng thái</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of dataCustomer, index as inx">
+        <td>{{item.customer}}</td>
+        <td>{{item.address}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.phone}}</td>
+        <div>
+          <button type="button" class="btn btn-outline-warning"><i class='bx bx-edit-alt' ></i></button>
+          <button type="button" class="btn btn-outline-danger" (click)="onDelete(inx)"><i class='bx bx-x'></i></button>
+        </div>
+      </tr>
+    </tbody>
+  </table>
+</div>
