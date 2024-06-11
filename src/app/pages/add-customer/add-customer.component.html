@@ -2,7 +2,7 @@
   <div class="container">
     <form [formGroup]="rfContact">
       <div data-mdb-input-init class="form-outline mb-4">
-        <label class="form-label" for="form3Example3">Khách hàng</label>
+        <label class="form-label" for="form3Example3" style="font-weight: bold;">Khách hàng</label>
         <input
           type="email"
           id="form3Example3"
@@ -11,7 +11,7 @@
         />
       </div>
       <div data-mdb-input-init class="form-outline mb-4">
-        <label class="form-label" for="form3Example3">Địa chỉ</label>
+        <label class="form-label" for="form3Example3" style="font-weight: bold;">Địa chỉ</label>
         <input
           type="email"
           id="form3Example3"
@@ -22,7 +22,7 @@
 
       <!-- Email input -->
       <div data-mdb-input-init class="form-outline mb-4">
-        <label class="form-label" for="form3Example3">Email</label>
+        <label class="form-label" for="form3Example3" style="font-weight: bold;">Email</label>
         <input
           type="email"
           id="form3Example3"
@@ -33,7 +33,7 @@
 
       <!-- Password input -->
       <div data-mdb-input-init class="form-outline mb-4">
-        <label class="form-label" for="form3Example4">Số điện thoại</label>
+        <label class="form-label" for="form3Example4" style="font-weight: bold;">Số điện thoại</label>
         <input
           type="text"
           id="form3Example4"
@@ -44,10 +44,10 @@
     </form>
 
     <div class="modal-footer">
-      <button class="btn btn-outline-success" type="button" (click)="onAdd()">
+      <button style="font-weight: bold; margin-right: 10px;" class="btn btn-outline-success" type="button" (click)="onAdd()">
         Thêm
       </button>
-      <button class="btn btn-outline-danger" type="button" (click)="onExit()">
+      <button style="font-weight: bold;" class="btn btn-outline-danger" type="button" (click)="onExit()">
         Thoát
       </button>
     </div>
